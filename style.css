@@ -1,27 +1,26 @@
 body {
-    background-image: url("backcel.jpg");
-    background-size: cover;
-    background-position: center;
     width: 100vw;
     height: 100vh;
     align-items: center;
     justify-content: center;
     font-family: 'Electrolize', sans-serif;
-    color: rgb(79, 216, 240);
+    color: rgb(32, 103, 121);
 }
 
 
 .head.container {
+    background-color:rgb(2, 20, 17); 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    border-bottom: rgb(79, 216, 240) 1px solid;
+    border-bottom: rgb(54, 59, 59) 1px solid;
 }
 
 .head__logo {
 
     width: 6rem;
+    
 }
 
 .head__titulo {
@@ -32,6 +31,7 @@ body {
 
 .principal {
     
+    background: linear-gradient(153deg, rgba(1,9,7,1) 28%, rgba(17,70,68,1) 100%);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -39,7 +39,7 @@ body {
     margin-top: 0.2rem;
     padding-top: 0.2rem;
     align-items: center;
-    border-top: rgb(79, 216, 240) 1px solid;
+    border-top: rgb(54, 59, 59) 1px solid;
 }
 
 .input.container {
