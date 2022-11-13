@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Encriptador</title>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="head container">
+        <img class="head__logo" src="./img/logo.png" alt="Logo de hacking">
+        <h1 class="head__titulo">Encriptador</h1>
+    </header>
+    <main class="principal">
+        <h2 class="input__titulo">Ingrese el texto aqui</h2>
+        <section class="input container">
+            <textarea class="input__contenido recuadro" placeholder="¿Que quieres encriptar?" onclick="noborder()"></textarea>
+            <p class="input__instrucciones">solo letras minusculas y sin acentos</p>
+        </section>
+        <section class="botones container">
+            <button class="boton__encriptar btn" onclick="btnEncriptar()">
+                <h2 class="boton__encriptar__contenido">Encriptar</h2>
+            </button>
+            <button class="boton__desencriptar btn" onclick="btnDesencriptar()">
+                <h2 class="boton__desencriptar__contenido">Desencriptar</h2>
+            </button>
+        </section>
+        <h2 class="ouput__titulo">Texto encriptado</h2>
+        <section class="ouput container">
+            <textarea class="ouput__contenido recuadro" placeholder="Texto no encontrado"></textarea>
+            <div class="botoncopiar">
+                <button class="boton__copiar btn" onclick="copiar()">
+                    <h2 class="boton__copiar__contenido">Copiar</h2>
+                </button>
+            </div>
+        </section>
+
+        <footer class="footer container">
+            <p class="footer__texto">Codigo por Whisper73</p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
