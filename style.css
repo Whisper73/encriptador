@@ -1,6 +1,5 @@
 body {
-
-    background: url("../img/backcel.jpg");
+    background: url("/backcel.jpg");
     background-size: cover;
     background-position: center;
     width: 100vw;
