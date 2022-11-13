@@ -153,7 +153,6 @@ body {
 @media screen and (min-width: 641px) {
 
     .principal {
-        background: none;
         border :none;
         display: grid;
         grid-template-columns: 50% 50%;
