@@ -1,7 +1,8 @@
 body {
 
-    background: rgb(1,9,7);
-    background: linear-gradient(153deg, rgba(1,9,7,1) 28%, rgba(17,70,68,1) 100%);
+    background: url("../img/backcel.jpg");
+    background-size: cover;
+    background-position: center;
     width: 100vw;
     height: 100vh;
     align-items: center;
