@@ -1,7 +1,7 @@
 body {
 
-    background: url("../img/backcel.jpg");
-    background-size: cover;
+    background: rgb(1,9,7);
+    background: linear-gradient(153deg, rgba(1,9,7,1) 28%, rgba(17,70,68,1) 100%);
     width: 100vw;
     height: 100vh;
     align-items: center;
@@ -31,7 +31,7 @@ body {
 }
 
 .principal {
-    background-color: rgba(0, 4, 5, 0.507);
+    
     width: 100vw;
     height: 100vh;
     display: flex;
