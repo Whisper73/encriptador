@@ -1,3 +1,8 @@
+*{
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -11,7 +16,6 @@ body {
 .head.container {
     background-color:rgb(2, 20, 17); 
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     border-bottom: rgb(54, 59, 59) 1px solid;
@@ -33,12 +37,12 @@ body {
     
     background: linear-gradient(153deg, rgba(1,9,7,1) 28%, rgba(17,70,68,1) 100%);
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 6rem);
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 0.2rem;
     padding-top: 0.2rem;
-    align-items: center;
     border-top: rgb(54, 59, 59) 1px solid;
 }
 
@@ -62,12 +66,17 @@ body {
     background: none;
     width: 70vw;
     height: 8rem;
-    border: rgb(79, 216, 240) 1px solid;
-    border: none;
+    border-style: none;
+    outline: none;
+    resize: none;
     margin: 1rem;
     font-family: 'Electrolize', sans-serif;
     color: antiquewhite;
 
+}
+
+.input__instrucciones{
+    margin-bottom: 1rem;
 }
 
 .botones {
@@ -86,7 +95,7 @@ body {
     height: 2rem;
     border-radius: 10%;
     border: none;
-    box-shadow: 5px 5px 5px rgba(250, 235, 215, 0.164);
+    box-shadow: 0 0 5px antiquewhite;
 
 }
 
@@ -118,8 +127,9 @@ body {
     background: none;
     width: 70vw;
     height: 8rem;
-    border: rgb(79, 216, 240) 1px solid;
-    border: none;
+    border-style: none;
+    outline: none;
+    resize: none;
     margin: 1rem;
     font-family: 'Electrolize', sans-serif;
     color: antiquewhite;
@@ -153,12 +163,15 @@ body {
 @media screen and (min-width: 641px) {
 
     .principal {
-        border :none;
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 10% 50% 10% 10% 10%;
+        grid-template-rows: 10% 60% 10% 10% 10%;
         grid-template-areas: "titulo", "entrada", "botones1","titulo2","salida","copiar","piedepagina";
         
+    }
+
+    .recuadro{
+        transform: scale(0.9);
     }
 
     .input__titulo {
@@ -170,24 +183,24 @@ body {
 
     .input.container {
         grid-area: entrada;
-        width: 48vw;
-        height: 60vh;
+        width: 100%;
+        height: 100%;
         grid-column: 1 /2;
-        grid-row: 2 /4;
+        grid-row: 2 /3;
     }
 
     .input__contenido{
-        
         width: 40vw;
         height: 32rem;
+        font-size: 1.5rem;
     }
 
     .botones.container{
         grid-area: botones1;
         width: 48vw;
         grid-column: 1 /2;
-        grid-row: 4 / 5;
-
+        grid-row: 3 / 4;
+        transform: scale(0.9);
     }
     .btn{
         width: 20vw;
@@ -202,20 +215,21 @@ body {
 
     .ouput.container{
         grid-area: salida;
-        width: 48vw;
-        height: 60vh;
+        width: 100%;
+        height: 100%;
         grid-column: 2 /3;
-        grid-row: 2 /4;
+        grid-row: 2 /3;
         
     }
     .ouput__contenido{
+        font-size: 1.5rem;
         width: 40vw;
         height: 32rem;
         
     }
     .boton__copiar{
         grid-area: copiar;
-        width: 45vw;
+        width: 35vw;
         grid-column: 2 /3;
         grid-row: 4 / 5;
         
@@ -225,5 +239,10 @@ body {
         grid-area: piedepagina;
         grid-column: 1 / 3;
         grid-row: 5 / 6;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
 }

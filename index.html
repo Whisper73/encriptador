@@ -18,8 +18,8 @@
     </header>
     <main class="principal">
         <h2 class="input__titulo">Ingrese el texto aqui</h2>
-        <section class="input container">
-            <textarea class="input__contenido recuadro" placeholder="¿Que quieres encriptar?" onclick="noborder()"></textarea>
+        <section class="input container recuadro">
+            <textarea class="input__contenido" placeholder="¿Que quieres encriptar?"></textarea>
             <p class="input__instrucciones">solo letras minusculas y sin acentos</p>
         </section>
         <section class="botones container">
@@ -31,8 +31,8 @@
             </button>
         </section>
         <h2 class="ouput__titulo">Texto encriptado</h2>
-        <section class="ouput container">
-            <textarea class="ouput__contenido recuadro" placeholder="Texto no encontrado"></textarea>
+        <section class="ouput container recuadro">
+            <textarea class="ouput__contenido" placeholder="Texto no encontrado"></textarea>
             <div class="botoncopiar">
                 <button class="boton__copiar btn" onclick="copiar()">
                     <h2 class="boton__copiar__contenido">Copiar</h2>
@@ -41,10 +41,11 @@
         </section>
 
         <footer class="footer container">
-            <p class="footer__texto">Codigo por Whisper73</p>
+            <p class="footer__texto">2022 | Codigo por Juan Ramirez | Whisper73</p>
         </footer>
     </main>
     <script src="script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

@@ -2,6 +2,8 @@
 const input = document.querySelector(".input__contenido");
 const output = document.querySelector(".ouput__contenido");
 
+
+
 function btnEncriptar() {
     const textoEncriptado = encriptar(input.value);
     output.value = textoEncriptado;
@@ -12,15 +14,31 @@ function btnEncriptar() {
 function btnDesencriptar() {
     const textoEncriptado = desencriptar(input.value);
     output.value = textoEncriptado;
-    input = "";
+    input.value = "";
 
 }
+
 
 function copiar() {
     output.select();
     output.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(output.value);
-    output.value="";
+    
+
+    if(output.value != "") {
+        Swal.fire(
+            'Listo!',
+            'Contenido copiado!',
+            'success'
+        )    
+    }else{
+        Swal.fire(
+            'Cuidado!',
+            'Nada que copiar!',
+            'warning'
+        )    
+    }  
+    output.value="";  
 }
 
 function encriptar(texto) {
